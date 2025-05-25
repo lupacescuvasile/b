@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formular cititor</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="background">
+    <form class="formular">
+      <h2>Formularul de înregistrare a cititorului</h2>
+
+      <fieldset>
+        <legend>Date generale</legend>
+
+        <label for="nume">Nume, Prenume:</label>
+        <input type="text" id="nume" name="nume"><br><br>
+
+        <label for="data">Data nașterii:</label>
+        <input type="date" id="data" name="data"><br><br>
+
+        <label>Genul:</label>
+        M <input type="radio" name="gen" value="M">
+        F <input type="radio" name="gen" value="F"><br><br>
+
+        <label for="regiune">Regiunea:</label>
+        <select id="regiune" name="regiune">
+          <option value="nord">Nord</option>
+          <option value="centru">Centru</option>
+          <option value="sud">Sud</option>
+        </select><br><br>
+
+        <label for="reguli">Regulile pentru cititori:</label><br>
+        <textarea id="reguli" rows="4" cols="40">
+Accesul în bibliotecă este liber. Daca doriți să accesați resurse ce nu sunt indicate, ne contactați.
+        </textarea><br><br>
+
+        <input type="checkbox" id="accept" name="accept">
+        <label for="accept">Acceptați regulile</label><br><br>
+
+        <input type="submit" value="Înregistrează">
+      </fieldset>
+    </form>
+  </div>
+</body>
+</html>
